@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title bookmarks
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    // Chrome, Firefox OS and Opera
+    meta(name='theme-color', content='#263959')
+    // Windows Phone
+    meta(name='msapplication-navbutton-color', content='#263959')
+    // iOS Safari
+    meta(name='apple-mobile-web-app-status-bar-style', content='#263959')
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap', rel='stylesheet')
+    // Styles
+    link(rel='stylesheet', href='/css/skeleton.css')
+  body
+    div
+      ul
+        each category in categories
+          li
+            a(href='/'+category) #{category}&#32;
+    each post in posts
+      a(href=post.url, target="blank")
+        img(src=post.img)
+      div #{post.domain} - #{post.shared}
+      h2
+        a(href=post.url, target="blank") #{post.title}
+      if post.tags
+        each tag in post.tags
+          a(href='?tag='+tag.replace("#","")) #{tag}&#32;
+      <hr/>
