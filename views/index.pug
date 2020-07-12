@@ -19,8 +19,13 @@ html(lang='en')
     div
       ul
         each category in categories
-          li
-            a(href='/'+category) #{category}&#32;
+          if selectedCategory == category
+            li
+              a(href='/'+category style="font-weight: bold;") >#{category}<&#32;
+          else
+            li
+              a(href='/'+category) #{category}&#32;
+          fi
     each post in posts
       a(href=post.url, target="blank")
         img(src=post.img)

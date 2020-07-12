@@ -64,7 +64,7 @@ indexRouter.use('/', async (req, res, next) => {
     // if this is the root path, or the catch all category
     // then render the content
     if (['/', `/${all}`].includes(req.path)) {
-      res.render('index', { posts: { ...posts[all] }, categories });
+      res.render('index', { posts: { ...posts[all] }, categories, selectedCategory: all });
     } else { // otherwise, set the posts & tags and move on
       req.posts = posts;
       req.tags = tags;

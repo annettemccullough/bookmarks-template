@@ -10,6 +10,7 @@ function routerPaths(categories) {
     const content = {
       posts: { ...req.posts[category] },
       categories,
+      selectedCategory: category
     };
 
     res.render('index', content);
