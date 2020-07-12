@@ -1,5 +1,7 @@
 ## Bookmarks (Template)
-Generate a minimally styled view of bookmarks from a specified Pocket account.
+Generate a minimally styled view of bookmarks from a specified Pocket account with automatic subpath and filter creation.
+
+Used to create and populate [annettemccullough.com/bookmarks](https://bookmarks.annettemccullough.com)
 
 Content, categories and filters will be automatically populated based on any `#hashtags` added when a post is recommended.
 
