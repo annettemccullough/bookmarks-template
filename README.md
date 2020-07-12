@@ -54,3 +54,6 @@ CATEGORIES=
 `cp .env.example .env`
 
 `npm run dev`
+
+### example
+![example of generated page](./img/bookmarks-template-example.jpg)
