@@ -11,9 +11,12 @@ All tags will automatically act as filters on the content displayed on the curre
 
 `categories` can be optionally configured to meaningfully group your bookmarks/recommendations. A sub-path will be automatically created for each category specified, any posts with a matching tag will appear on this sub-path.
 
-`categories` will be displayed on every page allowing for 2 levels of filtering, e.g. if a share has the tag `#aws #cloud`, and `#cloud` is a configured category, then selecting this category will navigate to the auto-generated route `/cloud`, selecting the `#aws` tag on the post will append `?tag=aws` resulting in `/cloud?tag=aws`.
+`categories` will be displayed on every page allowing for 2 levels of filtering, e.g. if a share has the tag `#aws #cloud`, and `cloud` is a configured category, then selecting this category will navigate to the auto-generated route `/cloud`, selecting the `#aws` tag on the post will append `?tag=aws` resulting in `/cloud?tag=aws`.
 
-If both `#cloud` and `#aws` are configured as categories the post will be viewable in both `/cloud` and `/aws`, allowing posts to appear across as many relevant categories as is configured.
+If both `cloud` and `aws` are configured as categories the post will be viewable in both `/cloud` and `/aws`, allowing posts to appear across as many relevant categories as is configured.
+
+N.B. tags must be added in the message of the Pocket post at the time of recommendation
+![Pocket Recommendation](./img/pocket-recommendation.jpg)
 
 
 ### configuration
