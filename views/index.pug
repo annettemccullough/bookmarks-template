@@ -29,6 +29,7 @@ html(lang='en')
     each post in posts
       a(href=post.url, target="blank")
         img(src=post.img)
+      div #{post.commentNoTags}
       div #{post.domain} - #{post.shared}
       h2
         a(href=post.url, target="blank") #{post.title}
